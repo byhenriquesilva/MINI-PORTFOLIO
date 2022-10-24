@@ -1,0 +1,154 @@
+body{
+    background-image: url(../imagens/fundo-site.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    font-family: 'Baloo 2', cursive; 
+    color: #f3f3f3;
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 30px;
+}
+
+.cartao{
+    background-color: #070d12;
+    width: 390px;
+    border: 2px solid #3e77e0;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.cartao .minhas-informacoes{
+    padding-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.cartao .minhas-informacoes img{
+    border-radius: 50px;
+    border: 4px solid #3e77e0;   
+    width: 100px; 
+}
+
+.cartao .minhas-informacoes .nome{
+    font-size: 23px;
+}
+
+.cartao .minhas-informacoes .cargo{
+    font-size: 18px;
+    color: #7f91cc;
+}
+
+.cartao .conteudo{
+    margin-top: 10px;
+}
+
+.cartao .abas{
+    display: flex;
+}
+
+.cartao .abas .aba{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.cartao .abas img{
+    width: 25px;
+}
+
+.cartao .abas .aba.selecionado{
+    background-color: #313131;
+}
+
+.cartao .informacoes-abas{
+    background-color: #313131;
+}
+
+.cartao .abas .aba:hover{
+    background-color: #414141;
+}
+
+.informacoes-abas .informacao{
+    min-height: 290px;
+    padding: 15px;
+    display: none;
+}
+
+.informacoes-abas .informacao.selecionado{
+    display: block;
+}
+
+.informacoes-abas .sub-titulo{
+    font-size: 18px;
+    margin-bottom:5px;
+    text-align: center;
+}
+
+.informacoes-abas .descricao{
+    font-size: 16px;
+    max-height: 250px;
+    overflow-y: auto;
+    padding-right: 10px;
+    text-align: justify;
+}
+
+.informacoes-abas .descricao span{
+    color: #3e77e0;
+}
+
+#informacao-minhas-redes{
+    min-height: 313px;
+}
+
+.redes-sociais{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    align-items: center;
+    max-height: 240px;
+    overflow-y: auto;
+
+}
+
+.redes-sociais li a{    
+    width: 250px;
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    color: #f3f3f3;
+    align-items: center;
+    padding: 5px;
+    font-size: 16x;
+    transition: opacity 0.3s ease-in-out;
+    border-radius: 15px;
+}
+
+.redes-sociais li a:hover{
+    opacity: 0.8;
+}
+
+.redes-sociais .instagram{
+    background-color: #06c185;
+}
+
+.redes-sociais .linkedin{
+    background-color: #1d87bd;
+}
+
+.redes-sociais .github{
+    background-color: #545454;
+}
+.redes-sociais img{
+    width: 27px;
+    margin-right: 10px;
+}
